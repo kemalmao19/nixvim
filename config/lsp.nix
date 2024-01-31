@@ -6,6 +6,7 @@
 
   plugins.lsp = {
     enable = true;
+    onAttach = builtins.readFile ./lua/lsp-onAttach.lua;
     servers = {
       rnix-lsp.enable = true;
       rnix-lsp.autostart = true;

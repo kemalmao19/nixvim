@@ -58,6 +58,25 @@
     };
   };
 
+  plugins.treesitter = {
+    enable = true;
+    indent = true;
+  };
+
+  plugins.rainbow-delimiters = {
+    enable = true;
+    highlight = [
+      "RainbowLevel1"
+      "RainbowLevel2"
+      "RainbowLevel3"
+      "RainbowLevel4"
+      "RainbowLevel5"
+      "RainbowLevel6"
+      "RainbowLevel7"
+      "RainbowLevel0"
+    ];
+  };
+
   extraConfigLua = ''
     vim.opt.list = true
     vim.opt.listchars:append("eol:↴")
