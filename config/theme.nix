@@ -48,6 +48,16 @@
   };
 
   extraPlugins = with pkgs.vimPlugins; [ edge unicode-vim lsp-inlayhints-nvim ];
+
+  plugins.lualine = {
+    enable = true;
+    theme = "nightfly";
+    componentSeparators = {
+      left = "|";
+      right = "|";
+    };
+  };
+
   extraConfigLua = ''
     vim.opt.list = true
     vim.opt.listchars:append("eol:↴")
