@@ -64,6 +64,9 @@
     { name = "treesitter"; }
   ];
 
+  plugins.luasnip.enable = true;
+  plugins.nvim-cmp.snippet.expand = "luasnip";
+
   plugins.cmp-nvim-lsp.enable = true;
   plugins.cmp-nvim-lsp-document-symbol.enable = true;
   plugins.cmp-nvim-lsp-signature-help.enable = true;
