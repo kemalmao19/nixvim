@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   plugins.which-key.registrations = {
     "K" = [ "<cmd>Lspsaga hover_doc<cr>" "Code Hover" ];
@@ -24,6 +25,21 @@
       tailwindcss.autostart = true;
     };
   };
+
+  # ocaml lsp 
+  extraPackages = with pkgs; [
+    ocamlPackages.ocaml-lsp
+    ocamlPackages.ocamlformat
+  ];
+
+  filetype.extension = {
+    "re" = "ocaml";
+    "rei" = "ocaml";
+  };
+
+  extraConfigLuaPost = ''
+    require'lspconfig'.ocamllsp.setup{}
+  '';
 
   plugins.nvim-cmp.enable = true;
   plugins.nvim-cmp.mapping =
