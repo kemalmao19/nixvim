@@ -2,7 +2,7 @@
   config = {
     options = {
       number = true;
-      relativenumber = false;
+      relativenumber = true;
       shiftwidth = 2;
       clipboard.register = "unnamedplus";
 
@@ -10,4 +10,5 @@
       smartindent = true;
     };
   };
+  imports = [ ./comment.nix ];
 }
