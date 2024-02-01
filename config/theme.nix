@@ -8,6 +8,8 @@
     };
   };
 
+  imports = [ ./alpha.nix ];
+
   plugins.cursorline.enable = true;
 
   plugins.nvim-tree = {
@@ -53,8 +55,8 @@
     enable = true;
     theme = "nightfly";
     componentSeparators = {
-      left = "|";
-      right = "|";
+      left = "|>";
+      right = "|>";
     };
   };
 
