@@ -1,6 +1,6 @@
 {
   plugins = {
-    codeium = {
+    codeium-nvim = {
       enable = true;
     };
   };

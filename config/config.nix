@@ -12,6 +12,6 @@
   };
   imports = [
     ./comment.nix
-    ./config/codeium.nix
+    ./codeium/codeium.nix
   ];
 }
