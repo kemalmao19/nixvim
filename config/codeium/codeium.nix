@@ -1,0 +1,7 @@
+{
+  plugins = {
+    codeium = {
+      enable = true;
+    };
+  };
+}

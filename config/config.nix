@@ -10,5 +10,8 @@
       smartindent = true;
     };
   };
-  imports = [ ./comment.nix ];
+  imports = [
+    ./comment.nix
+    ./config/codeium.nix
+  ];
 }

@@ -23,9 +23,6 @@
 
       tailwindcss.enable = true;
       tailwindcss.autostart = true;
-
-      efm.enable = true;
-      efm.autostart = true;
     };
   };
 
