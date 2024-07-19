@@ -80,11 +80,13 @@
   };
 
   extraConfigLua = ''
-    vim.opt.list = true
-    vim.opt.listchars:append("eol:↴")
+        vim.opt.list = true
+        vim.opt.listchars:append("eol:↴")
 
-    require('lsp-inlayhints').setup({
-      renderer = "inlay-hints/render/virtline",
-    })
+        require('lsp-inlayhints').setup({
+          renderer = "inlay-hints/render/virtline",
+        })
+
+    		require("codeium").setup {}
   '';
 }
