@@ -6,7 +6,6 @@
       tabstop = 2;
       shiftwidth = 2;
       clipboard.register = "unnamedplus";
-
       updatetime = 100; #faster compiletion
       smartindent = true;
     };
